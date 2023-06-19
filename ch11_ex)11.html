@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("body").click(function () {
+                $(".drawer-menu").slideToggle("slow")
+            })
+        })
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 10px 0;
+        }
+        .drawer{
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            color: white;
+            background-color: red;
+        }
+        .drawer h1{
+            height: 50px;
+            line-height: 50px;
+        }
+        .drawer-menu{
+            display: none;
+        }
+        .content{
+            padding: 10px;
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="drawer">
+        <h1>Logo</h1>
+        <div class="drawer-menu">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic voluptates, earum aspernatur ad deserunt quaerat est adipisci explicabo. Nostrum, aliquid est id voluptates optio voluptatem perferendis eveniet tempore laboriosam odio!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, totam! Id incidunt, esse officia magni voluptatibus nihil! Laborum deserunt magni ad reprehenderit nemo. Dicta iste dolore laudantium libero, magni maxime!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quasi error sapiente quibusdam. Debitis deserunt corporis quo magnam praesentium modi quibusdam? Consequuntur excepturi quo nobis modi accusamus odit voluptatem placeat?</p>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem magnam dicta ullam quis quam laboriosam adipisci cumque quas sint. Numquam et velit dolorum temporibus sunt nisi consectetur, quasi sed assumenda.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi autem unde eius facilis tempore harum et rem est! Libero possimus adipisci aspernatur? Enim in ratione adipisci sit error nulla!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestias ratione repellendus excepturi ut aut, esse sint fuga doloribus unde illum natus voluptatum incidunt maiores? Temporibus ut debitis nostrum et.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque qui quisquam repudiandae voluptatibus delectus explicabo repellendus perferendis, tempore alias quaerat fugiat blanditiis obcaecati architecto eaque hic, suscipit facilis totam exercitationem?</p>
+    </div>
+</body>
+</html>
